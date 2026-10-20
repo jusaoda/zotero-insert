@@ -1,0 +1,37 @@
+<vbox id="selection-zh-settings-pane" onload="SelectionZHSettings.init()">
+  <html:div style="max-width:620px;padding:12px;line-height:1.7">
+    <html:h2>划词中文翻译</html:h2>
+    <html:p>选择英文后自动翻译，译文区域可拖动右下角调整宽度和高度。</html:p>
+    <html:p><html:label for="selection-zh-mode">翻译模式</html:label><html:br/>
+      <html:select id="selection-zh-mode" style="width:100%;padding:6px">
+        <html:option value="free">免费翻译（不用 AI · MyMemory）</html:option>
+        <html:option value="ai">AI 翻译（API）</html:option>
+      </html:select>
+    </html:p>
+    <html:p>免费模式将选文发送给 MyMemory，不调用 DeepSeek。AI 模式将选文发送给所选模型服务，费用和额度按服务方规则计算。失败时不会自动切换服务。</html:p>
+    <html:fieldset style="padding:12px">
+      <html:legend>AI 服务配置</html:legend>
+      <html:label for="selection-zh-provider">服务来源</html:label><html:br/>
+      <html:select id="selection-zh-provider" style="width:100%;padding:6px">
+        <html:option value="deepseek">DeepSeek 官方</html:option>
+        <html:option value="sjtu">上海交通大学模型服务</html:option>
+      </html:select>
+      <html:p id="selection-zh-base-url"/>
+      <html:label for="selection-zh-presets">快捷选择模型</html:label><html:br/>
+      <html:select id="selection-zh-presets" style="width:100%;padding:6px"/>
+      <html:br/>
+      <html:label for="selection-zh-key">API Key</html:label><html:br/>
+      <html:input id="selection-zh-key" type="password" autocomplete="off" spellcheck="false" style="box-sizing:border-box;width:100%;padding:6px" placeholder="填写所选服务 API Key"/>
+      <html:p id="selection-zh-key-state"/>
+      <html:label for="selection-zh-model">模型名称</html:label><html:br/>
+      <html:input id="selection-zh-model" type="text" spellcheck="false" style="box-sizing:border-box;width:100%;padding:6px"/>
+      <html:p>论文翻译建议选择 DeepSeek Flash（deepseek-chat）。各服务的 Key 分别保存在本机 Zotero 密码管理器中。</html:p>
+      <html:button id="selection-zh-clear" type="button">清除已保存的 Key</html:button>
+    </html:fieldset>
+    <html:p>
+      <html:button id="selection-zh-save" type="button">保存设置</html:button>
+      <html:button id="selection-zh-test" type="button">保存并测试 AI 翻译</html:button>
+    </html:p>
+    <html:p id="selection-zh-status" role="status" style="white-space:pre-wrap;overflow-wrap:anywhere"/>
+  </html:div>
+</vbox>
