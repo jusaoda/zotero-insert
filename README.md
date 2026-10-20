@@ -2,6 +2,12 @@
 
 Zotero 划词中文翻译插件。当前版本 **1.2.1**，适用于 Zotero 10.0.x。
 
+## 直接下载
+
+### [⬇ 点击下载安装包（v1.2.1）](https://github.com/jusaoda/zotero-insert/raw/refs/heads/main/releases/selection-zh-1.2.1.xpi)
+
+下载后，在 Zotero 中选择 **工具 → 插件 → 齿轮菜单 → Install Plugin From File…**，打开下载的 `.xpi` 文件即可安装。
+
 ## 功能
 
 - 在 PDF 和阅读模式中选中英文，自动翻译为简体中文。
@@ -13,7 +19,7 @@ Zotero 划词中文翻译插件。当前版本 **1.2.1**，适用于 Zotero 10.0
 
 ## 安装
 
-下载仓库中的 [selection-zh-1.2.1.xpi](releases/selection-zh-1.2.1.xpi)，在 Zotero 中打开：
+下载仓库中的 [selection-zh-1.2.1.xpi](https://github.com/jusaoda/zotero-insert/raw/refs/heads/main/releases/selection-zh-1.2.1.xpi)，在 Zotero 中打开：
 
 工具 → 插件 → 齿轮菜单 → Install Plugin From File…，选择下载的 `.xpi`。
 
